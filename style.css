@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: greyscayled;
+}
+
+:root {
+  /* Background */
+  --background-default: #f5f4f0;
+  --background-primary: #D9D9D9;
+
+  /* Text */
+  --text-primary: #1B1B1B;
+  --text-secondary: #333333;
+  --text-tertiary: #696969;
+  --text-headline: #E1624F;
+
+  /* Accent */
+  --accent-blue: #0C51A7;
+  --accent-orange: #E95E10;
+  --accent-pink: #E5245E;
+  --accent-purple: #591B98;
+
+  /* REM Fixing */
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+/* FONT PROPS */
+
+html, body, input {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 3.6rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+ol {
+  padding:0;
+  list-style-position:inside;
+}
+
+h3, ol li {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+ul li {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: left;
+  display: flex;
+}
+
+ul li::before {
+  content: "・";
+  color: var(--text-secondary);
+  font-size: 1.6rem;
+}
+
+.good-for {
+  font-weight: bold;
+  color: var(--text-secondary);
+  margin-top: 2rem;
+}
+
+headline {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--accent-orange);
+  margin-bottom: .8rem;
+}
+
+paragraph {
+  font-size: 1.6rem;
+  font-weight: regular;
+  margin-top: .4rem;
+}
+
+.subtitle {
+  font-size: 1.6rem;
+  font-style: italic;
+  text-align: center;
+  margin-top: 2.4rem;
+}
+
+.blue-text {
+  color: var(--accent-blue);
+}
+.orange-text {
+  color: var(--accent-orange);
+}
+.pink-text {
+  color: var(--accent-pink);
+}
+.purple-text {
+  color: var(--accent-purple);
+}
+
+/* SECTION PROPS */
+#app {
+  max-width: 1140px;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  border-radius: 2.8rem;
+}
+
+section {
+  margin-bottom: 4rem;
+  margin-top: 6.4rem;
+  border-top: 1px solid var(--background-primary);
+  padding-top: 6.4rem;
+}
+
+body {
+  padding: 8.8rem 8rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-height: 640px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2.8rem;
+  margin-top: 4.8rem;
+}
+
+main img {
+  height: auto;
+}
+list img {
+  height: 35rem;
+}
+
+section img{
+  margin-bottom: 2rem;
+  max-height: 350px;
+}
+
+#title-list {
+  margin-bottom: 6.4rem;
+}
+
+footer {
+  border-top: 1px solid var(--background-primary);
+  padding-top: 4rem;
+  text-align: center;
+}
